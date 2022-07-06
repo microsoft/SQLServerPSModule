@@ -1,14 +1,51 @@
-# Project
+# ![logo][] SqlServer PowerShell Module
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+[logo]: https://raw.githubusercontent.com/microsoft/SqlServerPSModule/main/assets/ps_black_64.svg?sanitize=true
 
-As the maintainer of this project, please make a few updates:
+This module allows SQL Server developers, administrators and business intelligence professionals to automate database development and server administration, as well as both multidimensional and tabular cube processing.
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+🚛 Get it via the PowerShell gallery: https://www.powershellgallery.com/packages/SqlServer
+
+🔎 Cmdlet Reference: https://docs.microsoft.com/powershell/module/sqlserver/
+
+
+## Feedback Repository
+
+This repository is available for triaging and addressing feedback on the SqlServer PowerShell module. We welcome community interaction and suggestions!
+
+
+## New to PowerShell?
+
+If you are new to PowerShell and would like to learn more, we recommend reviewing the [getting started][] documentation.
+
+[getting started]: https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell
+
+## Installing or updating the SqlServer module
+To install the **SqlServer** module from the PowerShell Gallery, start a [PowerShell](/powershell/scripting/overview) session and run `Install-Module SQLServer`.
+
+If running on Windows PowerShell you can use `Install-Module SQLServer -Scope CurrentUser` to install the module for the current user and avoid needing elevated permissions.
+
+### Install the SqlServer module for all users
+Run the following command in your elevated PowerShell session to install the SqlServer module for all users:
+
+```powershell
+Install-Module -Name SqlServer
+```
+
+### To view the versions of the SqlServer module installed
+Execute the following command to see the versions of the SqlServer module that have been installed
+
+```powershell
+Get-Module SqlServer -ListAvailable
+```
+
+### To overwrite a previous version of the SqlServer module
+
+You can also use the `Install-Module` command to overwrite a previous version.
+
+```powershell
+Install-Module -Name SqlServer -AllowClobber
+```
 
 ## Contributing
 
