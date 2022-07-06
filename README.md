@@ -21,33 +21,22 @@ If you are new to PowerShell and would like to learn more, we recommend reviewin
 [getting started]: https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell
 
 ## Installing or updating the SqlServer module
+To install the **SqlServer** module from the PowerShell Gallery, start a [PowerShell](/powershell/scripting/overview) session and run `Install-Module SQLServer`.
 
-To install the **SqlServer** module from the PowerShell Gallery, start a [PowerShell](/powershell/scripting/overview) session as an administrator. You can also start Azure Data Studio as an administrator and run these commands in a PowerShell session in the integrated terminal.
+If running on Windows PowerShell you can use `Install-Module SQLServer -Scope CurrentUser` to install the module for the current user and avoid needing elevated permissions.
 
-You can also use *Install-Module SQLServer -Scope CurrentUser* to run elevated permissions. This cmdlet is useful for users who aren't administrators in their environment. However, since the scope is limited to the current user, other users on the same machine can't use the module.
-
-### Install the SqlServer module
-
-Run the following command in your PowerShell session to install the SqlServer module for all users:
+### Install the SqlServer module for all users
+Run the following command in your elevated PowerShell session to install the SqlServer module for all users:
 
 ```powershell
 Install-Module -Name SqlServer
 ```
 
 ### To view the versions of the SqlServer module installed
-
 Execute the following command to see the versions of the SqlServer module that have been installed
 
 ```powershell
 Get-Module SqlServer -ListAvailable
-```
-
-### Install for the current user rather than as an administrator
-
-If you aren't able to run the PowerShell session as an administrator, install for the current user using the following command:
-
-```powershell
-Install-Module -Name SqlServer -Scope CurrentUser
 ```
 
 ### To overwrite a previous version of the SqlServer module
