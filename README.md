@@ -1,6 +1,6 @@
 # ![logo][] SqlServer PowerShell Module
 
-[logo]: https://raw.githubusercontent.com/microsoft/SqlServerPSModule/main/assets/ps_black_64.svg?sanitize=true
+[logo]: https://github.com/microsoft/SQLServerPSModule/blob/main/assets/ps_black_64.svg
 
 This module allows SQL Server developers, administrators and business intelligence professionals to automate database development and server administration, as well as both multidimensional and tabular cube processing.
 
